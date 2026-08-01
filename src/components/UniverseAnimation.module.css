@@ -43,7 +43,7 @@
 .galaxy {
   border-radius: 50%;
   border: 2px solid var(--color-accent);
-  background-color: #000000;
+  background-color: var(--color-ink);
 }
 
 .top {
@@ -88,7 +88,7 @@
   padding-top: 40.3%;
   border: 2px solid var(--color-accent);
   border-radius: 50%;
-  background: #000000;
+  background: var(--color-ink);
   transform-origin: 50% 50%;
   animation: icon4planet 10s linear 0s infinite;
 }
@@ -136,7 +136,7 @@
   height: 20%;
   border: 2px solid var(--color-accent);
   border-radius: 50%;
-  background: #000000;
+  background: var(--color-ink);
 }
 
 .galaxy {

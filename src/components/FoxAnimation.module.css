@@ -26,7 +26,7 @@
   top: 0;
   border-left: 36px solid transparent;
   border-right: 36px solid transparent;
-  border-top: 36px solid #000000;
+  border-top: 36px solid var(--color-ink);
 }
 
 .head::after {
@@ -45,7 +45,7 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #000000;
+  background: var(--color-ink);
   z-index: 4;
 }
 
@@ -65,7 +65,7 @@
   right: 11px;
   width: 12px;
   height: 3px;
-  background: #000000;
+  background: var(--color-ink);
   opacity: 0;
   z-index: 4;
   animation: winkClosedAnimation 4s linear 1s infinite;
@@ -105,7 +105,7 @@
   height: 0;
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
-  border-top: 8px solid #000000;
+  border-top: 8px solid var(--color-ink);
   z-index: 4;
 }
 
@@ -114,7 +114,7 @@
   top: 54px;
   width: 72px;
   height: 36px;
-  background: #ffffff;
+  background: var(--color-paper);
   z-index: 1;
   border-bottom: 36px solid var(--color-accent);
 }
@@ -125,7 +125,7 @@
   top: 36px;
   border-left: 36px solid transparent;
   border-right: 36px solid transparent;
-  border-top: 36px solid #ffffff;
+  border-top: 36px solid var(--color-paper);
 }
 
 .legs {
@@ -165,9 +165,9 @@
   position: absolute;
   bottom: 72px;
   right: 0;
-  border-top: 26px solid #ffffff;
+  border-top: 26px solid var(--color-paper);
   border-bottom: 26px solid var(--color-accent);
-  border-right: 26px solid #ffffff;
+  border-right: 26px solid var(--color-paper);
   border-left: 26px solid var(--color-accent);
   transform-origin: bottom left;
   animation: tailAnimation 1.4s linear 1.5s infinite;

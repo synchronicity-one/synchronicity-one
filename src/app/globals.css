@@ -1,7 +1,12 @@
 @import 'tailwindcss';
 
-@theme {
+/* "static" forces Tailwind to emit every variable into :root, including the
+   ones only referenced from CSS Modules. Without it unused tokens are dropped
+   and var() calls inside the modules resolve to nothing. */
+@theme static {
   --color-accent: #7fff00;
+  --color-ink: #000000;
+  --color-paper: #ffffff;
   --font-display: 'Russo synchro 400', sans-serif;
 }
 
