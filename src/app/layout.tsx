@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body style={{fontFamily: "'Russo synchro 400', sans-serif"}} className='bg-black text-[#7fff00] antialiased'>
+      <body className='bg-black text-accent font-display antialiased'>
         {children}
       </body>
     </html>
