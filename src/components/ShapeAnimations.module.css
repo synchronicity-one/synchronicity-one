@@ -1,0 +1,47 @@
+/* Simple square shape animations - rewritten from the original WP CSS. */
+
+.shape {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex: none;
+  background-color: var(--color-accent);
+}
+
+.inner {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  background-color: #000000;
+}
+
+/* First shape - square morphing into a circle */
+.morph {
+  animation: squareToCircle 2s 0s linear infinite alternate;
+}
+
+.morphInner {
+  transform: rotate(45deg);
+  animation: squareToCircle 1s 2s linear infinite alternate;
+}
+
+@keyframes squareToCircle {
+  100% {
+    border-radius: 50%;
+  }
+}
+
+/* Second shape - square rotating with its inner square */
+.rotate {
+  animation: fullRotate 4s 4s linear infinite alternate;
+}
+
+.rotateInner {
+  animation: fullRotate 8s 8s linear infinite alternate;
+}
+
+@keyframes fullRotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}

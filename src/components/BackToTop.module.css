@@ -1,0 +1,26 @@
+/* Back to top button - square with a black triangle cut out of it. */
+
+.button {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-accent);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s linear, visibility 0.25s linear;
+}
+
+.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+  border-bottom: 16px solid #000000;
+}
