@@ -1,14 +1,14 @@
 # synchronicity.one
 
-> synchronicity.one sp. z o. o. builds and runs the systems an organisation depends on, on open source software and on servers the client owns. Based in Lublin, Poland. The Polish language counterpart of this company is 41.pl.
+> synchronicity.one sp. z o. o. builds and runs the systems an organisation depends on, using open-source software and servers the client controls. Based in Lublin, Poland. The Polish language counterpart of this company is 41.pl.
 
 ## What we do
 
-- Your own private cloud: mail, files, calendars and chat on Nextcloud or another open source stack, dedicated to a single organisation. Custom software when nothing off the shelf fits.
+- Your own private cloud: email, files, calendars and chat brought together in Nextcloud or another open-source platform. Custom development when no existing platform fits.
 - Programming that fills the gaps: scripts, API integrations, webhooks, plugins, calculators and forms.
-- Automation that removes manual work: scheduled reports, data moving between systems, unattended processes.
-- AI on your own data: LLMs running against the client's own documents and records on servers they control, and symbolic AI where an answer has to be repeatable and explainable.
-- Websites and online stores: static sites through to WP/Woo shops, built for speed and measured against Core Web Vitals.
+- Automation that removes manual work: reports that write themselves, data moving between systems on its own, unattended scheduled processes.
+- AI on your own data: LLMs reading the client's own documents and records on servers they control, and symbolic AI when an answer has to be repeatable and explainable.
+- Websites and online stores: static sites through to WP/Woo stores, built for speed and verified with real-user data.
 - Infrastructure that stays up: Linux servers, updates, monitoring and encrypted backups.
 
 ## Pages
@@ -22,3 +22,8 @@
 - Email: hello@synchronicity.one
 - Address: Metow 130, 20-388 Lublin, Poland
 - NIP 7133102855, REGON 382928370, KRS 0000779014
+
+## Related
+
+- [41.pl](https://41.pl/): the same company, Polish language website
+- [Lektos](https://lektos.pl/): our automation platform that connects company systems and answers questions about business data in plain language
