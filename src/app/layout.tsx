@@ -18,6 +18,11 @@ export const metadata: Metadata = {
     title: 'synchronicity.one',
     description,
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'synchronicity.one',
+    description,
+  },
 };
 
 export default function RootLayout({

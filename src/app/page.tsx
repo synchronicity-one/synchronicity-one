@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <Navbar active='/' />
-      <main className='relative min-h-screen overflow-hidden flex flex-col items-center pt-40 px-6 pb-12 gap-8 lg:block lg:pt-0 lg:px-0 lg:pb-0'>
+      <main className='relative min-h-screen overflow-hidden flex flex-col items-center pt-56 px-6 pb-12 gap-8 lg:block lg:pt-0 lg:px-0 lg:pb-0'>
         {/* Centred on the screen from lg up, in the flow below it */}
         <div className='lg:absolute lg:top-1/2 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2'>
           <UniverseAnimation />
