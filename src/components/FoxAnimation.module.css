@@ -186,12 +186,3 @@
     transform: rotate(-45deg);
   }
 }
-
-/* Skewed gradient bar used as a column separator on desktop. */
-.separator {
-  width: 60px;
-  min-height: 100%;
-  background: linear-gradient(0deg, rgba(51, 63, 40, 1) 1.5%, var(--color-accent) 99%);
-  transform: skewX(-22deg);
-  transform-origin: center;
-}

@@ -1,11 +1,22 @@
 import type { Metadata } from 'next';
 import './globals.css';
 
+const description =
+  'synchronicity.one builds and runs open-source systems that organisations own: private cloud, custom software, automation, AI and infrastructure.';
+
 export const metadata: Metadata = {
+  metadataBase: new URL('https://synchronicity.one'),
   title: 'synchronicity.one',
-  description: 'We provide comprehensive on-line development services to your enterprise.',
+  description,
   alternates: {
-    canonical: 'https://synchronicity.one',
+    canonical: '/',
+  },
+  openGraph: {
+    type: 'website',
+    siteName: 'synchronicity.one',
+    url: '/',
+    title: 'synchronicity.one',
+    description,
   },
 };
 
@@ -16,6 +27,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
+      <head>
+        <link
+          rel='preload'
+          href='/russo-one.woff2'
+          as='font'
+          type='font/woff2'
+          crossOrigin='anonymous'
+        />
+      </head>
       <body className='bg-black text-accent font-display antialiased'>
         {children}
       </body>

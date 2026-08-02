@@ -19,7 +19,3 @@ export function Fox() {
     </div>
   );
 }
-
-export function Separator() {
-  return <div className={styles.separator} aria-hidden='true'></div>;
-}

@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 export default function WhatWeDo() {
   return (
-    <PageShell>
+    <PageShell active='/what-we-do'>
       {/* Above the title on mobile, pinned to the right margin on desktop */}
       <div className='flex justify-center lg:block lg:absolute lg:top-36 lg:right-10'>
         <MorphShape />
@@ -32,9 +32,12 @@ export default function WhatWeDo() {
         {whatWeDo.tagline}
       </h2>
 
-      <div className='mt-8 lg:mt-10 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10'>
+      <div className='mt-8 lg:mt-10 grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-6'>
         {whatWeDo.blocks.map((block) => (
-          <div key={block.title}>
+          <div
+            key={block.title}
+            className='border border-accent/30 rounded-lg p-6 lg:p-7 transition-colors hover:border-accent hover:bg-accent/5'
+          >
             <h3 className='text-2xl leading-tight'>{block.title}</h3>
             <p className='mt-3 text-base lg:text-lg leading-relaxed opacity-80'>
               {block.text}

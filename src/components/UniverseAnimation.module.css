@@ -1,41 +1,15 @@
 /* Universe animation - rewritten from the original WP/Breakdance CSS.
    Scoped to the UniverseAnimation component. */
 
-.wrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.wrapperMobile {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
 .universe {
   position: relative;
   display: flex;
-  width: 364px;
-  height: 364px;
+  /* One rule instead of three breakpoints: half the viewport width on small
+     screens, capped at the original 364px on anything wider. */
+  width: min(50vw, 364px);
+  height: min(50vw, 364px);
   border: 0;
   overflow: visible;
-}
-
-@media only screen and (max-width: 1023px) {
-  .universe {
-    width: 364px;
-    height: 364px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .universe {
-    width: 50vw;
-    height: 50vw;
-  }
 }
 
 .planetoid,
