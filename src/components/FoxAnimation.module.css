@@ -109,6 +109,38 @@
   z-index: 4;
 }
 
+/* Mouth - thin asymmetric line, opening from the centre and closing back
+   to it. Revealed with clip-path so the arc keeps its shape (scaleX would
+   squash it) and never fades. */
+.mouth {
+  position: absolute;
+  top: 58px;
+  left: 24px;
+  width: 24px;
+  height: 8px;
+  background: transparent;
+  border-bottom: 2px solid var(--color-ink);
+  border-radius: 0 0 8px 30px;
+  transform: rotate(-7deg);
+  clip-path: inset(0 50% 0 50%);
+  z-index: 4;
+  animation: drawMouth 7s ease-in-out infinite;
+}
+
+@keyframes drawMouth {
+  0% {
+    clip-path: inset(0 50% 0 50%);
+  }
+  16%,
+  40% {
+    clip-path: inset(0 0 0 0);
+  }
+  56%,
+  100% {
+    clip-path: inset(0 50% 0 50%);
+  }
+}
+
 .neck {
   position: absolute;
   top: 54px;

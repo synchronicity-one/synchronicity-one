@@ -21,14 +21,14 @@ export default function WhatWeDo() {
         <MorphShape />
       </div>
 
-      <h1 className='mt-10 lg:mt-0 text-4xl lg:text-5xl leading-tight'>
+      <h1 className='mt-10 lg:mt-0 text-4xl lg:text-5xl leading-tight text-center lg:text-left'>
         {whatWeDo.heading}
       </h1>
       <p className='mt-6 max-w-2xl text-lg lg:text-xl leading-relaxed opacity-80'>
         {whatWeDo.lead}
       </p>
 
-      <h2 className='mt-14 lg:mt-16 text-3xl lg:text-4xl leading-tight'>
+      <h2 className='mt-14 lg:mt-16 text-3xl lg:text-4xl leading-tight text-center lg:text-left'>
         {whatWeDo.tagline}
       </h2>
 

@@ -26,13 +26,13 @@ export default function Contact() {
         <Fox />
       </div>
 
-      <h1 className='mt-10 lg:mt-0 text-4xl lg:text-5xl leading-tight'>
+      <h1 className='mt-10 lg:mt-0 text-4xl lg:text-5xl leading-tight text-center lg:text-left'>
         {contact.heading}
       </h1>
 
       {/* Under the title on mobile, bottom right corner on desktop */}
       <div className='mt-8 flex flex-col items-center gap-4 lg:mt-0 lg:fixed lg:bottom-12 lg:right-8 lg:z-40 lg:items-end'>
-        <p className='text-lg leading-relaxed opacity-80 text-center lg:text-right'>
+        <p className='text-lg leading-relaxed opacity-80 text-center lg:hidden'>
           {contact.lead}
         </p>
         <ButtonLink href={`mailto:${contact.email}`} size='small' className='lg:bg-ink'>
@@ -71,14 +71,14 @@ export default function Contact() {
 
       <div className={`mt-5 lg:mt-6 ${card}`}>
         <h2 className='text-xl leading-tight opacity-60'>{contact.links.label}</h2>
-        <div className='mt-3 flex flex-col sm:flex-row sm:gap-10 gap-3 text-base lg:text-lg'>
+        <div className='mt-4 flex flex-col gap-4 text-base lg:text-lg'>
           {contact.links.items.map((item) => (
             <a
               key={item.href}
               href={item.href}
               target='_blank'
               rel='noopener noreferrer'
-              className='underline underline-offset-4 decoration-accent/40 hover:decoration-accent transition-colors'
+              className='w-fit underline underline-offset-4 decoration-accent/40 hover:decoration-accent transition-colors'
             >
               {item.label}
             </a>

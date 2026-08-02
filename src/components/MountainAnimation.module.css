@@ -1,35 +1,36 @@
 /* Mountains with a rising sun. Same construction as the fox: CSS borders,
-   accent and ink only. */
+   accent and ink only. Sized to 160px to match the fox, which is the
+   reference size for subpage animations. */
 
 .stage {
   position: relative;
-  width: 140px;
-  height: 140px;
+  width: 160px;
+  height: 160px;
 }
 
 .big {
   position: absolute;
-  bottom: 20px;
-  left: 15px;
-  border-left: 45px solid transparent;
-  border-right: 45px solid transparent;
-  border-bottom: 65px solid var(--color-accent);
+  bottom: 23px;
+  left: 17px;
+  border-left: 51px solid transparent;
+  border-right: 51px solid transparent;
+  border-bottom: 74px solid var(--color-accent);
 }
 
 .small {
   position: absolute;
-  bottom: 20px;
-  right: 15px;
-  border-left: 32px solid transparent;
-  border-right: 32px solid transparent;
-  border-bottom: 45px solid var(--color-accent);
+  bottom: 23px;
+  right: 17px;
+  border-left: 37px solid transparent;
+  border-right: 37px solid transparent;
+  border-bottom: 51px solid var(--color-accent);
 }
 
 .sun {
   position: absolute;
-  left: 92px;
-  width: 22px;
-  height: 22px;
+  left: 105px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
   background: var(--color-accent);
   animation: rise 4s ease-in-out infinite alternate;
@@ -37,11 +38,11 @@
 
 @keyframes rise {
   0% {
-    bottom: 55px;
+    bottom: 63px;
     opacity: 0.4;
   }
   100% {
-    bottom: 85px;
+    bottom: 97px;
     opacity: 1;
   }
 }

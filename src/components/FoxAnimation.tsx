@@ -8,6 +8,7 @@ export function Fox() {
         <span className={`${styles.eye} ${styles.eyeRight}`}></span>
         <span className={styles.winkLine}></span>
         <span className={styles.nose}></span>
+        <span className={styles.mouth}></span>
       </div>
       <div className={styles.neck}></div>
       <div className={styles.legs}>

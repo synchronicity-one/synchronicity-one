@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import styles from './Navbar.module.css';
 
 const links = [
   { href: '/', label: 'Home' },
@@ -10,7 +11,7 @@ const links = [
 // so no client side routing hook is needed and nothing hydrates.
 export default function Navbar({ active }: { active: string }) {
   return (
-    <header className='fixed top-0 left-0 w-full z-50 bg-black'>
+    <header className={`fixed top-0 left-0 w-full z-50 bg-black ${styles.header}`}>
       <div className='flex flex-col lg:flex-row lg:items-center lg:justify-between px-6 py-4 gap-2 lg:gap-0 items-center'>
         <Link
           href='/'

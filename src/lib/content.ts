@@ -44,11 +44,11 @@ export const contact = {
   links: {
     label: 'Links',
     items: [
-      { label: 'Our Facebook', href: 'https://www.facebook.com/www.synchronicity.one' },
+      { label: 'Our Facebook page', href: 'https://www.facebook.com/www.synchronicity.one' },
       { label: 'Our website in Polish', href: 'https://41.pl/' },
       {
         label:
-          'Lektos, our automation platform that connects company systems and opens business data to plain-language questions',
+          'Lektos, our automation platform that connects company systems and answers questions about your business data in plain language',
         href: 'https://lektos.pl/',
       },
     ],

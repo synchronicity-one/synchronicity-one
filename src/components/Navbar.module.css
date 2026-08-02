@@ -1,0 +1,25 @@
+/* The bottom border appears only once the page has been scrolled.
+   Driven by scroll position, no JavaScript and no hydration.
+   Where scroll-driven animations are unsupported the border stays
+   transparent, which is a harmless fallback. */
+
+.header {
+  border-bottom: 1px solid transparent;
+}
+
+@supports (animation-timeline: scroll()) {
+  .header {
+    animation: revealBorder 1ms linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 0 80px;
+  }
+}
+
+@keyframes revealBorder {
+  from {
+    border-bottom-color: transparent;
+  }
+  to {
+    border-bottom-color: var(--color-accent-soft);
+  }
+}

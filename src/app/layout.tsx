@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import ScrollReset from '@/components/ScrollReset';
 import './globals.css';
 
 const description =
@@ -42,6 +43,7 @@ export default function RootLayout({
         />
       </head>
       <body className='bg-black text-accent font-display antialiased'>
+        <ScrollReset />
         {children}
       </body>
     </html>
