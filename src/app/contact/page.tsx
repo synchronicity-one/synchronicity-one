@@ -35,7 +35,7 @@ export default function Contact() {
         <p className='text-lg leading-relaxed opacity-80 text-center lg:hidden'>
           {contact.lead}
         </p>
-        <ButtonLink href={`mailto:${contact.email}`} size='small' className='lg:bg-ink'>
+        <ButtonLink href={`mailto:${contact.email}`} size='compact' className='lg:bg-ink'>
           {contact.email}
         </ButtonLink>
       </div>

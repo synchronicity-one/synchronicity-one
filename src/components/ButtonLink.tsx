@@ -3,7 +3,7 @@ import Link from 'next/link';
 type Props = {
   href: string;
   children: React.ReactNode;
-  size?: 'small' | 'large';
+  size?: 'compact' | 'small' | 'large';
   external?: boolean;
   className?: string;
 };
@@ -17,6 +17,7 @@ export default function ButtonLink({
   className = '',
 }: Props) {
   const sizes = {
+    compact: 'text-xl',
     small: 'text-xl lg:text-2xl',
     large: 'text-2xl lg:text-3xl',
   };
