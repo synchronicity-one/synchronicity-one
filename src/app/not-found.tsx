@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 export default function NotFound() {
   return (
-    <main className='min-h-screen flex flex-col items-center justify-center text-center gap-[30px] px-6'>
+    <main className='min-h-screen flex flex-col items-center justify-center text-center gap-[30px] px-6 pb-20 lg:pb-0'>
       <p className='text-[34px] font-thin'>404</p>
       <p className='text-[64px] lg:text-[100px] leading-none'>game over</p>
       <p className='text-[34px]'>play again?</p>
