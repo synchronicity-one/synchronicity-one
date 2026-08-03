@@ -24,7 +24,7 @@ export default function WhatWeDo() {
       <h1 className='mt-10 lg:mt-0 text-4xl lg:text-5xl leading-tight text-center lg:text-left'>
         {whatWeDo.heading}
       </h1>
-      <p className='mt-6 max-w-2xl text-lg lg:text-xl leading-relaxed opacity-80'>
+      <p className='mt-6 max-w-4xl text-lg lg:text-xl leading-relaxed opacity-80'>
         {whatWeDo.lead}
       </p>
 
