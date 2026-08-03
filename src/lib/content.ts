@@ -7,7 +7,7 @@ export const home = {
 
 export const whatWeDo = {
   heading: 'What we do',
-  lead: 'We build and run the systems your organisation depends on, using open-source software and servers you control: cloud platforms, custom applications, automation, AI, and the underlying infrastructure.',
+  lead: 'We build and run the systems your organisation depends on, using open-source software and servers you control: private clouds, custom applications, automation, AI, and the underlying infrastructure.',
   tagline: 'Own your systems',
   blocks: [
     {
