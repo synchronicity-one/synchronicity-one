@@ -9,7 +9,7 @@
 - Automation that removes manual work: reports that write themselves, data moving between systems on its own, unattended scheduled processes.
 - AI on your own data: LLMs reading the client's own documents and records on servers they control, and symbolic AI when an answer has to be repeatable and explainable.
 - Websites and online stores: static sites through to WP/Woo stores, built for speed and verified with real-user data.
-- Infrastructure that stays up: Linux servers, updates, monitoring and encrypted backups.
+- Infrastructure that stays up: Linux servers and VPS, VPN built on Tailscale and self-hosted Headscale, updates, monitoring and encrypted backups.
 
 ## Pages
 

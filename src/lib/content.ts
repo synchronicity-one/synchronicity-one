@@ -32,7 +32,7 @@ export const whatWeDo = {
     },
     {
       title: 'Infrastructure that stays up',
-      text: 'Linux servers, updates, monitoring and encrypted backups. When something breaks, a person answers.',
+      text: 'Linux servers and VPS, VPN built on Tailscale and self-hosted Headscale, updates, monitoring and encrypted backups. When something breaks, a person answers.',
     },
   ],
 };
