@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import BackToTop from '@/components/BackToTop';
 import ButtonLink from '@/components/ButtonLink';
 import PageShell from '@/components/PageShell';
@@ -17,6 +18,9 @@ export const metadata: Metadata = {
 
 const card =
   'border border-accent/30 rounded-lg p-6 lg:p-7 transition-colors hover:border-accent hover:bg-accent/5';
+
+const linkClass =
+  'w-fit underline underline-offset-4 decoration-accent/40 hover:decoration-accent transition-colors';
 
 export default function Contact() {
   return (
@@ -72,17 +76,23 @@ export default function Contact() {
       <div className={`mt-5 lg:mt-6 ${card}`}>
         <h2 className='text-xl leading-tight opacity-60'>{contact.links.label}</h2>
         <div className='mt-4 flex flex-col gap-4 text-base lg:text-lg'>
-          {contact.links.items.map((item) => (
-            <a
-              key={item.href}
-              href={item.href}
-              target='_blank'
-              rel='noopener noreferrer'
-              className='w-fit underline underline-offset-4 decoration-accent/40 hover:decoration-accent transition-colors'
-            >
-              {item.label}
-            </a>
-          ))}
+          {contact.links.items.map((item) =>
+            item.href.startsWith('/') ? (
+              <Link key={item.href} href={item.href} className={linkClass}>
+                {item.label}
+              </Link>
+            ) : (
+              <a
+                key={item.href}
+                href={item.href}
+                target='_blank'
+                rel='noopener noreferrer'
+                className={linkClass}
+              >
+                {item.label}
+              </a>
+            ),
+          )}
         </div>
       </div>
 

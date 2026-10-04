@@ -16,6 +16,7 @@
 - [Home](https://synchronicity.one/): company introduction
 - [What we do](https://synchronicity.one/what-we-do): services in detail
 - [Contact](https://synchronicity.one/contact): company details, bank details and email
+- [Privacy policy](https://synchronicity.one/privacy-policy): how we handle personal data, no cookies or tracking on this site
 
 ## Contact
 
